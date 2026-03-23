@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <script src="auth.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 3 - 計畫管理系統與管考作業</title>
+    <link rel="stylesheet" href="shared.css">
+</head>
+<body>
+
+    <div class="part-header">
+        <div class="part-num">Part 3</div>
+        <h1>計畫管理系統與管考作業</h1>
+        <p class="part-desc">
+            本章節詳細說明計畫執行期間須操作的各項管理系統，
+            包含 GRB、EAPMIS、GSTP、院內契約系統，
+            以及公文報備作業的完整流程與注意事項。
+        </p>
+    </div>
+
+    <!-- 3.1 GRB -->
+    <div class="section" id="s3-1">
+        <div class="section-number">3.1</div>
+        <h1 class="section-title">GRB 政府科技計畫管理系統</h1>
+        <p>GRB（Government Research Bulletin）為<strong>國科會主管的政府科技計畫資料庫</strong>，所有政府科技計畫皆須於此系統進行登錄與報告提交，以彙整全國科技計畫之研究成果與執行狀況。</p>
+
+        <h2>關鍵作業時程</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>作業項目</th>
+                    <th>提報時間</th>
+                    <th>注意事項</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>計畫起始登錄</strong></td>
+                    <td>簽約後 <strong>12 個工作日</strong>內</td>
+                    <td>須填寫計畫基本資料、主持人資訊、經費配置；需與契約書內容一致（§8(十九)）</td>
+                </tr>
+                <tr>
+                    <td><strong>期中摘要填報</strong></td>
+                    <td><strong>115 年 7 月 15 日</strong></td>
+                    <td>期中GRB</td>
+                </tr>
+                <tr>
+                    <td><strong>期末摘要（初稿）</strong></td>
+                    <td><strong>期末作業</strong></td>
+                    <td>期末報告GRB</td>
+                </tr>
+                <tr>
+                    <td><strong>期末報告繳交（國圖版）</strong></td>
+                    <td>機關通知期限內</td>
+                    <td>1 式 2 份＋電子檔；為驗收合格要件（§7(一)2(3)）。國圖版需要「計畫經費與人力明細」等與金額與人名相關等資訊需移除。</td>
+                </tr>            
+                <tr>
+                    <td><strong>結案登錄</strong></td>
+                    <td>驗收通過後儘速</td>
+                    <td>確認所有欄位填寫完成、報告上傳完畢；結案後資料將公開於 GRB 資料庫</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="info-box">
+            <strong>系統資訊：</strong>GRB 系統網址為 <a href="https://www.grb.gov.tw/" target="_blank" style="color:#1C4D8D;">https://www.grb.gov.tw/</a>，能源組全組計畫使用統一帳號（帳號：grb10697），密碼請參閱 <strong>參考文件/system_IDPW.xlsx</strong>。
+        </div>
+        <div class="info-box">
+            <strong>小技巧：</strong>GRB 登錄資料可從前一年度計畫複製後修改，可大幅節省起始登錄時間。登錄完成後務必請計畫主持人確認並送出。期中與期末報告上傳前，建議先確認檔案格式（PDF）與檔案大小限制。
+        </div>
+    </div>
+
+    <!-- 3.2 EAPMIS -->
+    <div class="section" id="s3-2">
+        <div class="section-number">3.2</div>
+        <h1 class="section-title">EAPMIS 能源署計畫管理系統</h1>
+        <p>EAPMIS 為<strong>能源署自建系統，用於追蹤計畫執行進度</strong>，是所有能源署委託計畫最頻繁使用的管考平台。計畫執行期間須定期提報月報、季報及各階段報告。</p>
+
+        <h2>作業項目與時程</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>作業項目</th>
+                    <th>提報時間</th>
+                    <th>注意事項</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>計畫起始</strong></td>
+                    <td>機關檢還鈐印契約公文發文日次日起 <strong>15 個工作日</strong>內</td>
+                    <td>登錄計畫基本資料、工作項目、查核點與里程碑設定（§8(二十)）</td>
+                </tr>
+                <tr>
+                    <td><strong>月成果回報</strong> <span class="tag red">最頻繁</span></td>
+                    <td>次月 <strong>3 日</strong>前</td>
+                    <td>填報前月執行進度、工作成果摘要、活動廣宣、成果統計、會議講習</td>
+                </tr>
+                <tr>
+                    <td><strong>當月活動廣宣規劃</strong></td>
+                    <td>每月 <strong>3 日</strong>前</td>
+                    <td>填報當月及次月活動廣宣規劃</td>
+                </tr>
+                <tr>
+                    <td><strong>會議講習季規劃</strong></td>
+                    <td><strong>2/15、5/15、8/15、11/15</strong></td>
+                    <td>每季提報會議講習規劃</td>
+                </tr>
+                <tr>
+                    <td><strong>查核點完成情形</strong></td>
+                    <td>查核點預計完成日</td>
+                    <td>依契約查核點時程回報完成情形</td>
+                </tr>
+                <tr>
+                    <td><strong>第 1 期工作季報表</strong></td>
+                    <td><strong>115 年 4 月 20 日</strong></td>
+                    <td>1 式 3 份；第 1 期付款條件之一（§7(一)2）</td>
+                </tr>
+                <tr>
+                    <td><strong>第 2 期工作季報表</strong></td>
+                    <td><strong>115 年 7 月 20 日</strong></td>
+                    <td>1 式 3 份（§7(一)2）</td>
+                </tr>
+                <tr>
+                    <td><strong>期中報告</strong></td>
+                    <td><strong>115 年 7 月 15 日</strong></td>
+                    <td>1 式 10 份（含電子檔）；第 3 期付款條件之一（§7(一)2）</td>
+                </tr>
+                <tr>
+                    <td><strong>上半年計畫執行績效</strong></td>
+                    <td><strong>8 月 11 日</strong></td>
+                    <td>上半年執行績效回報</td>
+                </tr>
+                <tr>
+                    <td><strong>第 3 期工作季報表</strong></td>
+                    <td><strong>115 年 10 月 20 日</strong></td>
+                    <td>1 式 3 份（§7(一)2）</td>
+                </tr>
+                <tr>
+                    <td><strong>期末報告（初稿）</strong></td>
+                    <td><strong>115 年 12 月 25 日</strong></td>
+                    <td>1 式 10 份（§7(一)1）</td>
+                </tr>
+                <tr>
+                    <td><strong>全年度預估經費動支表</strong></td>
+                    <td><strong>115 年 12 月 28 日</strong></td>
+                    <td>函送 1 式 3 份並上傳 EAPMIS（§3(一)）</td>
+                </tr>
+                <tr>
+                    <td><strong>年度計畫執行績效</strong></td>
+                    <td>次年 <strong>1 月 20 日</strong></td>
+                    <td>年度執行績效回報</td>
+                </tr>
+                <tr>
+                    <td><strong>期末報告（定稿）</strong></td>
+                    <td>機關通知期限內</td>
+                    <td>1 式 12 份＋電子檔上傳 EAPMIS ；驗收合格要件（§7(一)2(3)）</td>
+                </tr>
+                <tr>
+                    <td><strong>結案</strong></td>
+                    <td>日常完成並驗收通過後儘速</td>
+                    <td>確認所有計畫資料填報皆已準時提交（確認無罰款），系統狀態更新為結案
+                        <div style="margin-top: 10px;">
+                            <img src="參考文件/part3_計畫資料填報.png" alt="計畫資料填報評核表" style="max-width: 100%;">
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="warning-box">
+            <strong>注意1：</strong>內部每月成果進度採用Google sheet追蹤，由PM/PA彙整潤飾後，請主持人核閱。<br><br>
+            <strong>注意2：</strong>EAPMIS 月成果回報須於次月 3 日前完成，逾期提報將影響計畫考核成績。送出前需經計畫主持人審核確認。建議設定行事曆提醒，於每月 20 日前後開始準備月報資料。<br><br>
+            <strong>注意3：</strong>期中報告交付後的審查視各組辦理方式（近3年多採書審），期中審查之委員意見無須回文，併入期末報告中回覆。<br><br>
+            <strong>注意4：</strong>期末報告交付後多於次年1月辦理實體審查會議，會議後收到委員意見，辦理修定稿及定稿版等作業。
+        </div>
+        <div class="info-box">
+            <strong>系統資訊：</strong>EAPMIS 系統網址為 <a href="https://ea02.moeaea.gov.tw/a0305/login/login.xhtml" target="_blank" style="color:#1C4D8D;">https://ea02.moeaea.gov.tw/a0305/login/login.xhtml</a>（注意：網址可能會變更）。帳號依年度與計畫編號配發：
+            <ul style="margin: 8px 0 0 20px;">
+                <li>114 再生計畫：帳號 114-D0303</li>
+                <li>114 節能計畫：帳號 114-E0401</li>
+                <li>115 再生計畫：帳號 115-D0303</li>
+                <li>115 節能計畫：帳號 115-E0401</li>
+            </ul>
+            密碼請參閱 <strong>參考文件/system_IDPW.xlsx</strong>。
+        </div>
+    </div>
+
+    <!-- 3.3 GSTP -->
+    <div class="section" id="s3-3">
+        <div class="section-number">3.3</div>
+        <h1 class="section-title">GSTP 國科會科技計畫管理系統</h1>
+        <p>GSTP（Government Science and Technology Program）為國科會建置之科技計畫管理系統，主要用於<strong>每季細部計畫之提報</strong>，追蹤政府科技計畫之季度執行狀況。</p>
+
+        <h2>提報重點</h2>
+        <ul>
+            <li><strong>提報頻率：</strong>每季提報一次，依國科會公告時程辦理</li>
+            <li><strong>提報內容：</strong>當季計畫執行進度、經費動支情形、人力投入狀況、研究成果摘要</li>
+            <li><strong>提報時間：</strong>通常於每季3/6/9/12月底填寫內完成提報（確切日期依署內彙整窗口通知）</li>
+            <li><strong>審核流程：</strong>填報完成後須經計畫主持人附知承辦確認 → 系統送審</li>
+        </ul>
+
+        <h2>注意事項</h2>
+        <ul>
+            <li>GSTP 系統網址為 <a href="https://gstp.stpi.niar.org.tw/" target="_blank" style="color:#4988C4;">https://gstp.stpi.niar.org.tw/</a>，與 GRB 系統帳號相互獨立</li>
+            <li>帳號依角色區分：各細部計畫綁定當年主要聯絡人 email（rebeccaliu）；密碼請參閱 <strong>參考文件/system_IDPW.xlsx</strong></li>
+            <li>填寫方式需依據署內窗口及主秘要求</li>
+            <li>季報內容應與 EAPMIS 月報/季報數據保持一致，避免數據矛盾</li>
+            <li>經費動支比例若明顯落後預定進度90％，須於備註欄說明原因及改善措施</li>
+        </ul>
+
+        <div class="success-box">
+            <strong>注意：</strong>每季採累計填報。
+        </div>
+    </div>
+
+    <!-- 3.4 院內契約執行系統 -->
+    <div class="section" id="s3-4">
+        <div class="section-number">3.4</div>
+        <h1 class="section-title">院內契約履約系統</h1>
+        <p>工研院內部建置之契約履約管理系統，用於追蹤計畫從啟動到結案的完整生命週期，涵蓋執行規劃、查核點產出交付、品質審查及結案作業。</p>
+
+        <h2>作業流程</h2>
+        <ol>
+            <li>
+                <strong>計畫執行規劃</strong><br>
+                簽約後於系統建立計畫執行規劃書，包含：工作分解結構（WBS）、各階段查核點設定、預定產出項目與時程、人力資源配置
+            </li>
+            <li>
+                <strong>各項查核點之產出交付</strong><br>
+                依契約規定之查核時程，於系統上傳各查核點之佐證文件（如：同意交付資料、PMIS上傳截圖等），關鍵查核點將納入技術資料系統。
+            </li>
+            <li>
+                <strong>品質審查與交付證明上傳</strong><br>
+                產出文件須經院內品質審查程序，審查通過後上傳品質審查紀錄表及交付證明文件，作為計畫執行之佐證資料
+            </li>
+            <li>
+                <strong>結案作業</strong><br>
+                依據 ISTI 結案作業，辦理結案ISO文件及上傳。
+            </li>
+                <strong>風險作業</strong><br>
+                期初風險評估表上傳
+            </li>            
+        </ol>
+
+        <div class="warning-box">
+            <strong>注意：</strong>院內契約系統的查核點交付時程須與契約書一致，逾期交付將影響計畫績效評核。如有時程異動需求，應提前於系統提出變更申請。
+        </div>
+        <div class="info-box">
+            <strong>系統資訊：</strong>院內契約系統統一由商情與客戶合作管理（CRM）入口進入，網址為 <a href="https://crm.itri.org.tw/" target="_blank" style="color:#1C4D8D;">https://crm.itri.org.tw/</a>，使用個人工號及帳密登入。
+        </div>
+        <div class="info-box">
+            <strong>提醒：</strong>品質審查作業建議於查核點截止日前提前送審，以預留充足的審查與修改時間。
+        </div>
+    </div>
+
+    <!-- 3.5 公文報備作業 -->
+    <div class="section" id="s3-5">
+        <div class="section-number">3.5</div>
+        <h1 class="section-title">公文報備作業</h1>
+        <p>依據契約規定，計畫執行期間特定事項須以正式公文向能源署報備。以下為常見的報備類型與相關規範：</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>報備類型</th>
+                    <th>時機</th>
+                    <th>所需文件</th>
+                    <th>注意事項</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>出國報備</strong></td>
+                    <td>出國前 <strong>30 日</strong></td>
+                    <td>出國計畫書、行程表、經費概算表（於 EAPMIS 填報並下載申請表）</td>
+                    <td><strong>走紙本發文</strong>（方便抽換），須經計畫主持人及單位主管核准後發文；回國後 <strong>10 日</strong>內系統回報實際出國資訊；返國後 <strong>60 日</strong>內繳交出國報告 3 份（§7(一)2(5)）</td>
+                </tr>
+                <tr>
+                    <td><strong>分包報備</strong></td>
+                    <td>分包簽約後 <strong>30 日</strong>內</td>
+                    <td>分包契約書、計畫書、非拒絕往來廠商證明</td>
+                    <td>分包計畫依據組內計有流程辦理。送達機關備查（§8(七)8）；機關備查後 <strong>15 個工作日</strong>內完成 EAPMIS 分包登錄，逾期依 §12 計算違約金</td>
+                </tr>
+                <tr>
+                    <td><strong>人員異動報備</strong></td>
+                    <td>異動日起 <strong>30 日</strong>內</td>
+                    <td>異動名冊、保密同意書</td>
+                    <td>函請機關核可（§8(五)）；不得於期程結束前 10 日內或結束後函請</td>
+                </tr>
+                <tr>
+                    <td><strong>變更報備</strong></td>
+                    <td>變更事項發生前</td>
+                    <td>變更申請書、變更對照表、影響評估說明</td>
+                    <td>機關核可後 <strong>15 個工作日</strong>內完成系統登錄（§8(二十一)）；接獲通知後 <strong>10 日</strong>內提出文件（§14(一)）；不得於期程結束前 <strong>10 日</strong>內函請（§14(五)）</td>
+                </tr>
+                <tr>
+                    <td><strong>其他報備事項</strong></td>
+                    <td>依契約規定</td>
+                    <td>依個案所需文件</td>
+                    <td>如計畫展延、期中/期末審查時程異動等，皆須以公文報備</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="info-box">
+            <strong>提醒：</strong>所有公文報備皆須透過院內公文系統發文，發文前請確認計畫名稱正卻、公文格式正確、附件齊全。
+        </div>
+        <div class="success-box">
+            <strong>建議：</strong>建立報備事項追蹤清單，定期檢視是否有應報備而未報備之事項，以避免違反契約規定。
+        </div>
+    </div>
+
+    <!-- 3.6 知識物件 -->
+    <div class="section" id="s3-6">
+        <div class="section-number">3.6</div>
+        <h1 class="section-title">能專知識物件上傳</h1>
+        <p>依據能源署指示辦理，須通知各計畫<strong>每季上傳能專知識物件</strong>至能源知識庫。</p>
+
+        <h2>上傳平台與操作流程</h2>
+        <ol>
+            <li>進入「能源知識庫」網頁：<a href="https://km.twenergy.org.tw/" target="_blank" style="color:#1C4D8D;">https://km.twenergy.org.tw/</a></li>
+            <li>點選右上角「管理專區」→ 登入帳號、密碼</li>
+            <li>點選右上角「修改密碼」（首次登入後請立即重設密碼）</li>
+            <li>點選右上角「專業知識物件管理」→「新增知識物件」處上傳</li>
+        </ol>
+
+        <h2>登入資訊</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>項目</th>
+                    <th>說明</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>帳號</strong></td>
+                    <td>計畫主持人信箱 @ 前的帳號（有大小寫區分）。例：信箱為 cMi@itri.org.tw，帳號即為 <code>cMi</code></td>
+                </tr>
+                <tr>
+                    <td><strong>預設密碼</strong></td>
+                    <td><code>Energy@@2026</code>（密碼已設定，登入後請立即修改密碼）</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>上傳內容與頻率</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>類型</th>
+                    <th>內容說明</th>
+                    <th>上傳頻率</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>建言類</strong></td>
+                    <td>策略、政策、措施、法規等相關建言</td>
+                    <td>至少每半年一次</td>
+                </tr>
+                <tr>
+                    <td><strong>評析／標竿數據類</strong></td>
+                    <td>先進技術或方法、策略、政策、措施、法規之評析，或國內外技術標竿統計數據</td>
+                    <td>每季上傳</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="info-box">
+            <strong>內容要求：</strong>上傳內容需與計畫相關之政策、決策、建言、計畫評析成果、相關議題或目前國內外技術之標竿統計數據等較具策略性的知識物件。文字精要具體，量化數據盡量輔以圖表說明。
+        </div>
+        <div class="info-box">
+            <strong>聯絡窗口：</strong>相關問題請洽工研院綠能所張梅英小姐（Email：cmi@itri.org.tw、電話：03-5918560）。
+        </div>
+    </div>
+
+    <div class="page-nav">
+        <a href="Part2_起始作業.html">&larr; Part 2 起始作業</a>
+        <a href="Part4_動支成本.html">Part 4 動支成本 &rarr;</a>
+    </div>
+
+</body>
+</html>
