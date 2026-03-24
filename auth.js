@@ -1,5 +1,5 @@
 (function() {
-    var PASS = 'pm970306';
+    var PASS = '@pm970306';
     // Skip auth check if loaded inside an iframe (main.html already gates access)
     if (window.self !== window.top) return;
     if (sessionStorage.getItem('authed') === 'yes') return;
